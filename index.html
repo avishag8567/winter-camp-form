@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="he">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
             let uniform = document.querySelector("input[name='uniform']:checked")?.value || "";
             let thanks = document.getElementById("thanks").value;
 
-            if (!idNumber || !firstName || !lastName || !grade || !movie || !uniform) {
+            if (!idNumber || !firstName || !lastName || !grade || !movie ) {
                 alert("נא למלא את כל השדות המסומנים באדום");
                 return;
             }
@@ -69,8 +69,8 @@
                 <div class="mb-3">
                     <label class="form-label">בחרי סרט:</label>
                     <div class="form-check d-flex align-items-center gap-2">
-                        <input class="form-check-input" type="radio" name="movie" value="סלמטו 2" id="movie1">
-                        <label class="form-check-label" for="movie1">סלמטו 2</label>
+                        <input class="form-check-input" type="radio" name="movie" value="סלנטו 2" id="movie1">
+                        <label class="form-check-label" for="movie1">סלנטו 2</label>
                     </div>
                     <div class="form-check d-flex align-items-center gap-2">
                         <input class="form-check-input" type="radio" name="movie" value="דה זה וו" id="movie2">
@@ -86,22 +86,7 @@
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">האם לדעתך במחנה חורף צריך לחייב תלבושת?</label>
-                    <div class="form-check d-flex align-items-center gap-2">
-                        <input class="form-check-input" type="radio" name="uniform" value="כן" id="uniform1">
-                        <label class="form-check-label" for="uniform1">כן, זה מאד נח שיש תלבושת ולא צריך לקנות בגדים חדשים</label>
-                    </div>
-                    <div class="form-check d-flex align-items-center gap-2">
-                        <input class="form-check-input" type="radio" name="uniform" value="לא" id="uniform2">
-                        <label class="form-check-label" for="uniform2">לא, מחנה זה הזמן שלי להתלבש בגדים אחרים</label>
-                    </div>
-                    <div class="form-check d-flex align-items-center gap-2">
-                        <input class="form-check-input" type="radio" name="uniform" value="חלק-חלק" id="uniform3">
-                        <label class="form-check-label" for="uniform3">חלק-חלק - במסלולים ודאי צריך תלבושת אבל מתי שהוא נשמח להחליף לעוד בגדים..</label>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="thanks" class="form-label">תודה לאמא שלי על...</label>
+                    <label for="thanks" class="form-label">הערות ובקשות ניתן לכתוב פה</label>
                     <textarea class="form-control" id="thanks" name="thanks"></textarea>
                 </div>
                 <button type="button" class="btn btn-primary w-100" onclick="submitForm()">שלח</button>
